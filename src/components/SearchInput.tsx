@@ -5,6 +5,8 @@ interface SearchInputProps {
   value: string;
   /** Callback when query changes */
   onChange: (query: string) => void;
+  /** Placeholder text */
+  placeholder?: string;
 }
 
 /**
@@ -14,7 +16,7 @@ interface SearchInputProps {
  * @param value - Current search query string
  * @param onChange - Callback invoked with the new query when input changes
  */
-export function SearchInput({ value, onChange }: SearchInputProps) {
+export function SearchInput({ value, onChange, placeholder = "Search by title or director..." }: SearchInputProps) {
   /**
    * Handles input change events and calls onChange with the new value.
    */
@@ -36,8 +38,8 @@ export function SearchInput({ value, onChange }: SearchInputProps) {
         className="search-input__field"
         value={value}
         onChange={handleInputChange}
-        placeholder="Search by title or director..."
-        aria-label="Search movies by title or director"
+        placeholder={placeholder}
+        aria-label="Search"
       />
       {value && (
         <button

@@ -40,15 +40,17 @@ export function MovieCard({ movie, providers = {}, streamingRegion = 'US' }: Mov
             <span className="movie-card__placeholder-text">No Poster</span>
           </div>
         )}
-        {rating && (
-          <div className="movie-card__rating">
-            <span className="movie-card__rating-star">★</span>
-            <span className="movie-card__rating-value">{rating.toFixed(1)}</span>
-          </div>
-        )}
       </div>
       <div className="movie-card__info">
-        <h3 className="movie-card__title">{title}</h3>
+        <div className="movie-card__title-row">
+          <h3 className="movie-card__title">{title}</h3>
+          {rating && (
+            <span className="movie-card__rating">
+              <span className="movie-card__rating-star">★</span>
+              {rating.toFixed(1)}
+            </span>
+          )}
+        </div>
         <p className="movie-card__director">{director}</p>
         <div className="movie-card__meta-row">
           <span className="movie-card__meta">

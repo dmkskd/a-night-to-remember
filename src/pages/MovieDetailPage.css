@@ -12,15 +12,14 @@
   display: inline-flex;
   align-items: center;
   font-size: 1rem;
-  color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   padding: 0.5rem 0;
   transition: color 0.2s ease;
 }
 
 .movie-detail-page__back-link:hover {
-  color: #666;
-  text-decoration: underline;
+  color: #d4af37;
 }
 
 .movie-detail-page__content {
@@ -37,7 +36,7 @@
 
 .movie-detail-page__loading p {
   font-size: 1.125rem;
-  color: #666;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Error state */
@@ -70,14 +69,37 @@
 .movie-detail-page__not-found h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
 }
 
 .movie-detail-page__not-found p {
   font-size: 1.125rem;
-  color: #666;
+  color: rgba(255, 255, 255, 0.6);
   margin: 0;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .movie-detail-page__back-link {
+    color: #666;
+  }
+
+  .movie-detail-page__back-link:hover {
+    color: #b8860b;
+  }
+
+  .movie-detail-page__loading p {
+    color: #666;
+  }
+
+  .movie-detail-page__not-found h2 {
+    color: #1a1a1a;
+  }
+
+  .movie-detail-page__not-found p {
+    color: #666;
+  }
 }
 
 /* Responsive adjustments */

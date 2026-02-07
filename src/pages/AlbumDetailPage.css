@@ -1,0 +1,62 @@
+.album-detail-page {
+  min-height: 100vh;
+}
+
+.album-detail-page__nav {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.album-detail-page__back-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.album-detail-page__back-link:hover {
+  color: #d4af37;
+}
+
+.album-detail-page__content {
+  padding: 1rem 0;
+}
+
+.album-detail-page__not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.album-detail-page__not-found h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.album-detail-page__not-found p {
+  margin: 0 0 2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .album-detail-page__nav {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .album-detail-page__back-link {
+    color: #666;
+  }
+
+  .album-detail-page__back-link:hover {
+    color: #b8860b;
+  }
+
+  .album-detail-page__not-found h2 {
+    color: #1a1a1a;
+  }
+
+  .album-detail-page__not-found p {
+    color: #666;
+  }
+}

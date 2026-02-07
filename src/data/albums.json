@@ -1,0 +1,124 @@
+{
+  "albums": [
+    {
+      "artist": "Kanye West",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "year": 2010,
+      "recognitions": [
+        {
+          "type": "Pitchfork 10.0",
+          "year": 2010,
+          "details": "Score: 10.0"
+        },
+        {
+          "type": "RYM Essential",
+          "year": 2010,
+          "details": "Community Pick"
+        }
+      ],
+      "rating": 10.0,
+      "id": "my-beautiful-dark-twisted-fantasy-kanye-west-2010",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f",
+      "spotify_url": "https://open.spotify.com/album/20r762YmB5HeofjMCiPMLv",
+      "spotify_id": "20r762YmB5HeofjMCiPMLv"
+    },
+    {
+      "artist": "Arcade Fire",
+      "title": "Funeral",
+      "year": 2004,
+      "recognitions": [
+        {
+          "type": "Pitchfork 10.0",
+          "year": 2004,
+          "details": "Score: 10.0"
+        },
+        {
+          "type": "RYM Essential",
+          "year": 2004,
+          "details": "Community Pick"
+        }
+      ],
+      "rating": 10.0,
+      "id": "funeral-arcade-fire-2004",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2737870762a58313ad6f981d664",
+      "spotify_url": "https://open.spotify.com/album/6ZB8qaR9JNuS0Q0bG1nbcH",
+      "spotify_id": "6ZB8qaR9JNuS0Q0bG1nbcH"
+    },
+    {
+      "artist": "Wilco",
+      "title": "Yankee Hotel Foxtrot",
+      "year": 2002,
+      "recognitions": [
+        {
+          "type": "Pitchfork 10.0",
+          "year": 2002,
+          "details": "Score: 10.0"
+        },
+        {
+          "type": "RYM Essential",
+          "year": 2002,
+          "details": "Community Pick"
+        },
+        {
+          "type": "Country Essential",
+          "year": 2002,
+          "details": "Essential"
+        }
+      ],
+      "rating": 10.0,
+      "id": "yankee-hotel-foxtrot-wilco-2002",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2739ae9edb12345dcb5172374c8",
+      "spotify_url": "https://open.spotify.com/album/4jVVAenBaHRF8w0MV6qKw7",
+      "spotify_id": "4jVVAenBaHRF8w0MV6qKw7"
+    },
+    {
+      "artist": "Radiohead",
+      "title": "Kid A",
+      "year": 2000,
+      "recognitions": [
+        {
+          "type": "Pitchfork 10.0",
+          "year": 2000,
+          "details": "Score: 10.0"
+        },
+        {
+          "type": "RYM Essential",
+          "year": 2000,
+          "details": "Community Pick"
+        }
+      ],
+      "rating": 10.0,
+      "id": "kid-a-radiohead-2000",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b2736c7112082b63beefffe40151",
+      "spotify_url": "https://open.spotify.com/album/6GjwtEZcfenmOf6l18N7T7",
+      "spotify_id": "6GjwtEZcfenmOf6l18N7T7"
+    },
+    {
+      "artist": "Neutral Milk Hotel",
+      "title": "In the Aeroplane Over the Sea",
+      "year": 1998,
+      "recognitions": [
+        {
+          "type": "Pitchfork 10.0",
+          "year": 1998,
+          "details": "Score: 10.0"
+        },
+        {
+          "type": "RYM Essential",
+          "year": 1998,
+          "details": "Community Pick"
+        }
+      ],
+      "rating": 10.0,
+      "id": "in-the-aeroplane-over-the-sea-neutral-milk-hotel-1998",
+      "cover_url": "https://i.scdn.co/image/ab67616d0000b273bc1e41eed3ddbdfff6f2d74b",
+      "spotify_url": "https://open.spotify.com/album/17q5eeNk3HAjX1gzQnkTX7",
+      "spotify_id": "17q5eeNk3HAjX1gzQnkTX7"
+    }
+  ],
+  "recognitionTypes": [
+    "Country Essential",
+    "Pitchfork 10.0",
+    "RYM Essential"
+  ]
+}

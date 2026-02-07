@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App container */
+.app {
+  min-height: 100vh;
+}
+
+/* Header with title and nav */
+.app__header {
   text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app__title {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navigation tabs */
+.app__nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
+.app__nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #888;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.app__nav-link:hover {
+  color: #333;
+}
+
+.app__nav-link--active {
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .app__header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .app__title {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .app__nav-link {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .app__nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .app__nav-link--active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
 }

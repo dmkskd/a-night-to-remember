@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 uv.lock
+
+# Enrichment caches (avoid re-fetching from APIs)
+.spotify_cache.json
+.tmdb_cache.json

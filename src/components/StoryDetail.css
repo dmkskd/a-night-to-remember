@@ -1,0 +1,318 @@
+.story-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.story-detail__back {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.story-detail__back:hover {
+  color: #d4af37;
+}
+
+/* Header */
+.story-detail__header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.story-detail__main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.story-detail__title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.story-detail__author {
+  margin: 0;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.story-detail__link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.story-detail__link:hover {
+  color: #d4af37;
+  border-bottom-color: #d4af37;
+}
+
+.story-detail__year {
+  margin: 0;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.story-detail__country {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.story-detail__collection {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+/* Body sections */
+.story-detail__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-detail__section {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.story-detail__section-title {
+  margin: 0 0 1rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Genres */
+.story-detail__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.story-detail__genre {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.story-detail__genre:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Recognitions */
+.story-detail__recognitions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.story-detail__recognition {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.story-detail__recognition-type {
+  font-weight: 600;
+  color: #d4af37;
+}
+
+.story-detail__recognition-year {
+  margin-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.story-detail__recognition-details {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* Themes */
+.story-detail__themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.story-detail__theme {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(100, 100, 100, 0.3);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Read links */
+.story-detail__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.story-detail__read-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.story-detail__read-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.story-detail__read-link--primary {
+  background-color: #d4af37;
+  color: #000;
+  font-weight: 500;
+}
+
+.story-detail__read-link--primary:hover {
+  background-color: #e5c04b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-detail {
+    padding: 1rem;
+  }
+
+  .story-detail__title {
+    font-size: 1.75rem;
+  }
+
+  .story-detail__author {
+    font-size: 1.125rem;
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .story-detail__back {
+    color: #666;
+  }
+
+  .story-detail__back:hover {
+    color: #b8860b;
+  }
+
+  .story-detail__header {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .story-detail__title {
+    color: #1a1a1a;
+  }
+
+  .story-detail__author {
+    color: #333;
+  }
+
+  .story-detail__link {
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .story-detail__link:hover {
+    color: #b8860b;
+    border-bottom-color: #b8860b;
+  }
+
+  .story-detail__year {
+    color: #666;
+  }
+
+  .story-detail__country {
+    color: #888;
+  }
+
+  .story-detail__collection {
+    color: #666;
+  }
+
+  .story-detail__section {
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .story-detail__section-title {
+    color: #666;
+  }
+
+  .story-detail__genre {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .story-detail__genre:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .story-detail__recognition {
+    color: #333;
+  }
+
+  .story-detail__recognition-type {
+    color: #b8860b;
+  }
+
+  .story-detail__recognition-year {
+    color: #666;
+  }
+
+  .story-detail__recognition-details {
+    color: #555;
+  }
+
+  .story-detail__theme {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .story-detail__read-link {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+  }
+
+  .story-detail__read-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .story-detail__read-link--primary {
+    background-color: #d4af37;
+    color: #000;
+  }
+
+  .story-detail__read-link--primary:hover {
+    background-color: #e5c04b;
+  }
+}

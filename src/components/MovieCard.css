@@ -45,25 +45,17 @@
 }
 
 .movie-card__rating {
-  position: absolute;
-  top: 8px;
-  right: 8px;
   display: flex;
   align-items: center;
   gap: 2px;
-  padding: 4px 6px;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  flex-shrink: 0;
 }
 
 .movie-card__rating-star {
   color: #fbbf24;
-}
-
-.movie-card__rating-value {
-  color: white;
 }
 
 .movie-card__info {
@@ -72,6 +64,14 @@
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
+}
+
+.movie-card__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 .movie-card__title {
@@ -139,6 +139,10 @@
 
   .movie-card__title {
     color: #1a1a1a;
+  }
+
+  .movie-card__rating {
+    color: #333;
   }
 
   .movie-card__director {

@@ -1,0 +1,2641 @@
+{
+  "stories": [
+    {
+      "title": "The Year Without Sunshine",
+      "author": "Naomi Kritzer",
+      "year": 2025,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2025,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2024,
+          "details": "Uncanny Magazine"
+        }
+      ],
+      "themes": [
+        "community",
+        "climate",
+        "survival"
+      ],
+      "read_url": "https://uncannymagazine.com/article/the-year-without-sunshine/",
+      "source": "Uncanny Magazine",
+      "id": "the-year-without-sunshine-naomi-kritzer-2025"
+    },
+    {
+      "title": "How to Raise a Kraken in Your Bathtub",
+      "author": "P. Djèlí Clark",
+      "year": 2024,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2024,
+          "details": "Winner"
+        },
+        {
+          "type": "Nebula Award",
+          "year": 2024,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2023,
+          "details": "Uncanny Magazine"
+        }
+      ],
+      "themes": [
+        "family",
+        "mythology",
+        "responsibility"
+      ],
+      "read_url": "https://uncannymagazine.com/article/how-to-raise-a-kraken-in-your-bathtub/",
+      "source": "Uncanny Magazine",
+      "id": "how-to-raise-a-kraken-in-your-bathtub-p-djèlí-clark-2024"
+    },
+    {
+      "title": "Better Living Through Algorithms",
+      "author": "Naomi Kritzer",
+      "year": 2023,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2023,
+          "details": "Winner"
+        },
+        {
+          "type": "Nebula Award",
+          "year": 2023,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2022,
+          "details": "Clarkesworld"
+        }
+      ],
+      "themes": [
+        "dating",
+        "technology",
+        "AI"
+      ],
+      "read_url": "https://clarkesworldmagazine.com/kritzer_05_22/",
+      "source": "Clarkesworld",
+      "id": "better-living-through-algorithms-naomi-kritzer-2023"
+    },
+    {
+      "title": "The Silk Dragon: Translations from a Childhood",
+      "author": "Aliette de Bodard",
+      "year": 2023,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Nebula Award",
+          "year": 2023,
+          "details": "Winner"
+        }
+      ],
+      "id": "the-silk-dragon-translations-from-a-childhood-aliette-de-bodard-2023"
+    },
+    {
+      "title": "The Pill",
+      "author": "Meg Elison",
+      "year": 2022,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2022,
+          "details": "Winner"
+        }
+      ],
+      "id": "the-pill-meg-elison-2022"
+    },
+    {
+      "title": "Where Oaken Hearts Do Gather",
+      "author": "Sarah Pinsker",
+      "year": 2022,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Nebula Award",
+          "year": 2022,
+          "details": "Winner"
+        }
+      ],
+      "id": "where-oaken-hearts-do-gather-sarah-pinsker-2022"
+    },
+    {
+      "title": "Rabbit Test",
+      "author": "Samantha Shannon",
+      "year": 2022,
+      "read_url": "https://uncannymagazine.com/article/rabbit-test/",
+      "source": "Uncanny Magazine",
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "reproductive rights",
+        "dystopia",
+        "resistance"
+      ],
+      "recognitions": [
+        {
+          "type": "Free Online",
+          "year": 2022,
+          "details": "Uncanny Magazine"
+        }
+      ],
+      "id": "rabbit-test-samantha-shannon-2022"
+    },
+    {
+      "title": "Metal Like Blood in the Dark",
+      "author": "T. Kingfisher",
+      "year": 2021,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2021,
+          "details": "Winner"
+        }
+      ],
+      "id": "metal-like-blood-in-the-dark-t-kingfisher-2021"
+    },
+    {
+      "title": "A Guide for Working Breeds",
+      "author": "Vina Jie-Min Prasad",
+      "year": 2019,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2019,
+          "details": "Winner"
+        },
+        {
+          "type": "Nebula Award",
+          "year": 2020,
+          "details": "Winner"
+        }
+      ],
+      "themes": [],
+      "id": "a-guide-for-working-breeds-vina-jie-min-prasad-2019"
+    },
+    {
+      "title": "The Secret Lives of the Nine Negro Teeth of George Washington",
+      "author": "P. Djèlí Clark",
+      "year": 2019,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Nebula Award",
+          "year": 2019,
+          "details": "Winner"
+        }
+      ],
+      "id": "the-secret-lives-of-the-nine-negro-teeth-of-george-washington-p-djèlí-clark-2019"
+    },
+    {
+      "title": "Anxiety Is the Dizziness of Freedom",
+      "author": "Ted Chiang",
+      "year": 2019,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "free will",
+        "parallel universes"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 2019,
+          "details": "Essential"
+        }
+      ],
+      "id": "anxiety-is-the-dizziness-of-freedom-ted-chiang-2019"
+    },
+    {
+      "title": "Welcome to Your Authentic Indian Experience™",
+      "author": "Rebecca Roanhorse",
+      "year": 2018,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2018,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2017,
+          "details": "Apex Magazine"
+        }
+      ],
+      "themes": [
+        "colonialism",
+        "VR",
+        "identity"
+      ],
+      "read_url": "https://www.apex-magazine.com/short-fiction/welcome-to-your-authentic-indian-experience/",
+      "source": "Apex Magazine",
+      "id": "welcome-to-your-authentic-indian-experience-rebecca-roanhorse-2018"
+    },
+    {
+      "title": "Seasons of Glass and Iron",
+      "author": "Amal El-Mohtar",
+      "year": 2017,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Nebula Award",
+          "year": 2017,
+          "details": "Winner"
+        }
+      ],
+      "id": "seasons-of-glass-and-iron-amal-el-mohtar-2017"
+    },
+    {
+      "title": "Cat Person",
+      "author": "Kristen Roupenian",
+      "year": 2017,
+      "read_url": "https://www.newyorker.com/magazine/2017/12/11/cat-person",
+      "source": "The New Yorker",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "themes": [
+        "dating",
+        "gender",
+        "communication"
+      ],
+      "recognitions": [
+        {
+          "type": "Free Online",
+          "year": 2017,
+          "details": "The New Yorker"
+        }
+      ],
+      "id": "cat-person-kristen-roupenian-2017"
+    },
+    {
+      "title": "Cat Pictures Please",
+      "author": "Naomi Kritzer",
+      "year": 2016,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2016,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2015,
+          "details": "Clarkesworld"
+        }
+      ],
+      "themes": [
+        "ethics",
+        "AI",
+        "cats"
+      ],
+      "read_url": "https://clarkesworldmagazine.com/kritzer_01_15/",
+      "source": "Clarkesworld",
+      "id": "cat-pictures-please-naomi-kritzer-2016"
+    },
+    {
+      "title": "The Husband Stitch",
+      "author": "Carmen Maria Machado",
+      "year": 2015,
+      "collection": "Her Body and Other Parties",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Nebula Award",
+          "year": 2015,
+          "details": "Winner"
+        }
+      ],
+      "id": "the-husband-stitch-carmen-maria-machado-2015"
+    },
+    {
+      "title": "The Water That Falls on You from Nowhere",
+      "author": "John Chu",
+      "year": 2014,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2014,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2013,
+          "details": "Tor.com"
+        }
+      ],
+      "themes": [
+        "family",
+        "coming out",
+        "truth"
+      ],
+      "read_url": "https://www.tor.com/2013/02/20/the-water-that-falls-on-you-from-nowhere/",
+      "source": "Tor.com",
+      "id": "the-water-that-falls-on-you-from-nowhere-john-chu-2014"
+    },
+    {
+      "title": "The Paper Menagerie",
+      "author": "Ken Liu",
+      "year": 2012,
+      "collection": "The Paper Menagerie and Other Stories",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2012,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 2011,
+          "details": "io9"
+        }
+      ],
+      "themes": [
+        "family",
+        "immigration",
+        "magic"
+      ],
+      "read_url": "https://io9.gizmodo.com/read-ken-lius-amazing-story-that-swept-the-hugo-} nebula-5958919",
+      "source": "io9",
+      "id": "the-paper-menagerie-ken-liu-2012"
+    },
+    {
+      "title": "The Lifecycle of Software Objects",
+      "author": "Ted Chiang",
+      "year": 2010,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "AI",
+        "consciousness",
+        "parenting"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 2010,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-lifecycle-of-software-objects-ted-chiang-2010"
+    },
+    {
+      "title": "Exhalation",
+      "author": "Ted Chiang",
+      "year": 2009,
+      "collection": "Exhalation: Stories",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 2009,
+          "details": "Winner"
+        },
+        {
+          "type": "Sci-Fi Classic",
+          "year": 2008,
+          "details": "Essential"
+        },
+        {
+          "type": "Free Online",
+          "year": 2008,
+          "details": "Lightspeed Magazine"
+        }
+      ],
+      "themes": [
+        "mortality",
+        "consciousness",
+        "entropy"
+      ],
+      "read_url": "https://www.lightspeedmagazine.com/fiction/exhalation/",
+      "source": "Lightspeed Magazine",
+      "id": "exhalation-ted-chiang-2009"
+    },
+    {
+      "title": "The Thing Around Your Neck",
+      "author": "Chimamanda Ngozi Adichie",
+      "year": 2009,
+      "country": "Nigeria",
+      "collection": "The Thing Around Your Neck",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "immigration",
+        "identity"
+      ],
+      "recognitions": [
+        {
+          "type": "African Essential",
+          "year": 2009,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-thing-around-your-neck-chimamanda-ngozi-adichie-2009"
+    },
+    {
+      "title": "Cell One",
+      "author": "Chimamanda Ngozi Adichie",
+      "year": 2009,
+      "country": "Nigeria",
+      "collection": "The Thing Around Your Neck",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "family",
+        "Nigeria"
+      ],
+      "recognitions": [
+        {
+          "type": "African Essential",
+          "year": 2009,
+          "details": "Curated"
+        }
+      ],
+      "id": "cell-one-chimamanda-ngozi-adichie-2009"
+    },
+    {
+      "title": "The Headstrong Historian",
+      "author": "Chimamanda Ngozi Adichie",
+      "year": 2008,
+      "country": "Nigeria",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "colonialism",
+        "history"
+      ],
+      "recognitions": [
+        {
+          "type": "African Essential",
+          "year": 2008,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-headstrong-historian-chimamanda-ngozi-adichie-2008"
+    },
+    {
+      "title": "Runaway",
+      "author": "Alice Munro",
+      "year": 2004,
+      "collection": "Runaway",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 2004,
+          "details": "Winner"
+        }
+      ],
+      "id": "runaway-alice-munro-2004"
+    },
+    {
+      "title": "The Swimmer",
+      "author": "Zsuzsa Bánk",
+      "year": 2002,
+      "country": "Hungary",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "family",
+        "memory"
+      ],
+      "recognitions": [
+        {
+          "type": "Eastern European Essential",
+          "year": 2002,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-swimmer-zsuzsa-bánk-2002"
+    },
+    {
+      "title": "Hell Is the Absence of God",
+      "author": "Ted Chiang",
+      "year": 2001,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "theodicy",
+        "faith"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 2001,
+          "details": "Essential"
+        }
+      ],
+      "id": "hell-is-the-absence-of-god-ted-chiang-2001"
+    },
+    {
+      "title": "Story of Your Life",
+      "author": "Ted Chiang",
+      "year": 1999,
+      "collection": "Stories of Your Life and Others",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Nebula Award",
+          "year": 1999,
+          "details": "Winner"
+        },
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1998,
+          "details": "Essential"
+        }
+      ],
+      "themes": [
+        "time",
+        "linguistics",
+        "determinism"
+      ],
+      "id": "story-of-your-life-ted-chiang-1999"
+    },
+    {
+      "title": "Interpreter of Maladies",
+      "author": "Jhumpa Lahiri",
+      "year": 1999,
+      "collection": "Interpreter of Maladies",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1999,
+          "details": "Winner"
+        },
+        {
+          "type": "South Asian Essential",
+          "year": 1999,
+          "details": "Curated"
+        }
+      ],
+      "themes": [
+        "communication",
+        "marriage"
+      ],
+      "id": "interpreter-of-maladies-jhumpa-lahiri-1999"
+    },
+    {
+      "title": "The Third and Final Continent",
+      "author": "Jhumpa Lahiri",
+      "year": 1999,
+      "country": "India/USA",
+      "collection": "Interpreter of Maladies",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "immigration",
+        "adaptation"
+      ],
+      "recognitions": [
+        {
+          "type": "South Asian Essential",
+          "year": 1999,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-third-and-final-continent-jhumpa-lahiri-1999"
+    },
+    {
+      "title": "A Temporary Matter",
+      "author": "Jhumpa Lahiri",
+      "year": 1998,
+      "country": "India/USA",
+      "collection": "Interpreter of Maladies",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "grief",
+        "marriage"
+      ],
+      "recognitions": [
+        {
+          "type": "South Asian Essential",
+          "year": 1998,
+          "details": "Curated"
+        }
+      ],
+      "id": "a-temporary-matter-jhumpa-lahiri-1998"
+    },
+    {
+      "title": "Sensini",
+      "author": "Roberto Bolaño",
+      "year": 1997,
+      "country": "Chile",
+      "collection": "Last Evenings on Earth",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "exile",
+        "literature"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1997,
+          "details": "Curated"
+        }
+      ],
+      "id": "sensini-roberto-bolaño-1997"
+    },
+    {
+      "title": "Last Evenings on Earth",
+      "author": "Roberto Bolaño",
+      "year": 1997,
+      "country": "Chile",
+      "collection": "Last Evenings on Earth",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "father-son",
+        "Mexico"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1997,
+          "details": "Curated"
+        }
+      ],
+      "id": "last-evenings-on-earth-roberto-bolaño-1997"
+    },
+    {
+      "title": "The Memory Police",
+      "author": "Yoko Ogawa",
+      "year": 1994,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "memory",
+        "totalitarianism"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1994,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-memory-police-yoko-ogawa-1994"
+    },
+    {
+      "title": "Bears Discover Fire",
+      "author": "Terry Bisson",
+      "year": 1991,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1991,
+          "details": "Winner"
+        }
+      ],
+      "id": "bears-discover-fire-terry-bisson-1991"
+    },
+    {
+      "title": "Understand",
+      "author": "Ted Chiang",
+      "year": 1991,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "intelligence",
+        "consciousness"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1991,
+          "details": "Essential"
+        }
+      ],
+      "id": "understand-ted-chiang-1991"
+    },
+    {
+      "title": "The Things They Carried",
+      "author": "Tim O'Brien",
+      "year": 1990,
+      "collection": "The Things They Carried",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1990,
+          "details": "Winner"
+        }
+      ],
+      "id": "the-things-they-carried-tim-obrien-1990"
+    },
+    {
+      "title": "Tower of Babylon",
+      "author": "Ted Chiang",
+      "year": 1990,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "cosmology",
+        "faith"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1990,
+          "details": "Essential"
+        }
+      ],
+      "id": "tower-of-babylon-ted-chiang-1990"
+    },
+    {
+      "title": "Pregnancy Diary",
+      "author": "Yoko Ogawa",
+      "year": 1990,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "body",
+        "transformation"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1990,
+          "details": "Curated"
+        }
+      ],
+      "id": "pregnancy-diary-yoko-ogawa-1990"
+    },
+    {
+      "title": "Sleep",
+      "author": "Haruki Murakami",
+      "year": 1989,
+      "country": "Japan",
+      "collection": "The Elephant Vanishes",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "insomnia",
+        "identity"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1989,
+          "details": "Curated"
+        }
+      ],
+      "id": "sleep-haruki-murakami-1989"
+    },
+    {
+      "title": "Tangents",
+      "author": "Greg Bear",
+      "year": 1987,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1987,
+          "details": "Winner"
+        }
+      ],
+      "id": "tangents-greg-bear-1987"
+    },
+    {
+      "title": "The Elephant Vanishes",
+      "author": "Haruki Murakami",
+      "year": 1985,
+      "country": "Japan",
+      "collection": "The Elephant Vanishes",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "loss",
+        "surrealism"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1985,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-elephant-vanishes-haruki-murakami-1985"
+    },
+    {
+      "title": "The Second Bakery Attack",
+      "author": "Haruki Murakami",
+      "year": 1985,
+      "country": "Japan",
+      "collection": "The Elephant Vanishes",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "hunger",
+        "marriage"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1985,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-second-bakery-attack-haruki-murakami-1985"
+    },
+    {
+      "title": "Speech Sounds",
+      "author": "Octavia E. Butler",
+      "year": 1984,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1984,
+          "details": "Winner"
+        }
+      ],
+      "id": "speech-sounds-octavia-e-butler-1984"
+    },
+    {
+      "title": "Cathedral",
+      "author": "Raymond Carver",
+      "year": 1983,
+      "collection": "Cathedral",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1983,
+          "details": "Winner"
+        },
+        {
+          "type": "Literary Classic",
+          "year": 1983,
+          "details": "Essential"
+        }
+      ],
+      "themes": [],
+      "id": "cathedral-raymond-carver-1983"
+    },
+    {
+      "title": "A Small, Good Thing",
+      "author": "Raymond Carver",
+      "year": 1983,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1983,
+          "details": "Essential"
+        }
+      ],
+      "id": "a-small-good-thing-raymond-carver-1983"
+    },
+    {
+      "title": "Barn Burning",
+      "author": "Haruki Murakami",
+      "year": 1983,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "mystery",
+        "obsession",
+        "class"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1983,
+          "details": "Curated"
+        },
+        {
+          "type": "Free Online",
+          "year": 1983,
+          "details": "Granta"
+        }
+      ],
+      "read_url": "https://granta.com/barn-burning/",
+      "source": "Granta",
+      "id": "barn-burning-haruki-murakami-1983"
+    },
+    {
+      "title": "What We Talk About When We Talk About Love",
+      "author": "Raymond Carver",
+      "year": 1981,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1981,
+          "details": "Essential"
+        }
+      ],
+      "id": "what-we-talk-about-when-we-talk-about-love-raymond-carver-1981"
+    },
+    {
+      "title": "Jeffty Is Five",
+      "author": "Harlan Ellison",
+      "year": 1978,
+      "collection": null,
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1978,
+          "details": "Winner"
+        }
+      ],
+      "id": "jeffty-is-five-harlan-ellison-1978"
+    },
+    {
+      "title": "The Bicentennial Man",
+      "author": "Isaac Asimov",
+      "year": 1976,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "AI",
+        "humanity"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1976,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-bicentennial-man-isaac-asimov-1976"
+    },
+    {
+      "title": "The Ones Who Walk Away from Omelas",
+      "author": "Ursula K. Le Guin",
+      "year": 1974,
+      "collection": "The Wind's Twelve Quarters",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1974,
+          "details": "Winner"
+        },
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1973,
+          "details": "Essential"
+        }
+      ],
+      "themes": [
+        "utilitarianism",
+        "ethics"
+      ],
+      "id": "the-ones-who-walk-away-from-omelas-ursula-k-le-guin-1974"
+    },
+    {
+      "title": "The Day Before the Revolution",
+      "author": "Ursula K. Le Guin",
+      "year": 1974,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "anarchism",
+        "revolution"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1974,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-day-before-the-revolution-ursula-k-le-guin-1974"
+    },
+    {
+      "title": "Civil Peace",
+      "author": "Chinua Achebe",
+      "year": 1971,
+      "country": "Nigeria",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "war",
+        "resilience"
+      ],
+      "recognitions": [
+        {
+          "type": "African Essential",
+          "year": 1971,
+          "details": "Curated"
+        }
+      ],
+      "id": "civil-peace-chinua-achebe-1971"
+    },
+    {
+      "title": "The Madman",
+      "author": "Chinua Achebe",
+      "year": 1971,
+      "country": "Nigeria",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "sanity",
+        "society"
+      ],
+      "recognitions": [
+        {
+          "type": "African Essential",
+          "year": 1971,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-madman-chinua-achebe-1971"
+    },
+    {
+      "title": "The Electric Ant",
+      "author": "Philip K. Dick",
+      "year": 1969,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "reality",
+        "consciousness"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1969,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-electric-ant-philip-k-dick-1969"
+    },
+    {
+      "title": "I Have No Mouth, and I Must Scream",
+      "author": "Harlan Ellison",
+      "year": 1968,
+      "collection": "I Have No Mouth, and I Must Scream",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1968,
+          "details": "Winner"
+        }
+      ],
+      "id": "i-have-no-mouth-and-i-must-scream-harlan-ellison-1968"
+    },
+    {
+      "title": "A Very Old Man with Enormous Wings",
+      "author": "Gabriel García Márquez",
+      "year": 1968,
+      "country": "Colombia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "magical realism",
+        "faith"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1968,
+          "details": "Curated"
+        }
+      ],
+      "id": "a-very-old-man-with-enormous-wings-gabriel-garcía-márquez-1968"
+    },
+    {
+      "title": "The Handsomest Drowned Man in the World",
+      "author": "Gabriel García Márquez",
+      "year": 1968,
+      "country": "Colombia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "community",
+        "transformation"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1968,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-handsomest-drowned-man-in-the-world-gabriel-garcía-márquez-1968"
+    },
+    {
+      "title": "Where Are You Going, Where Have You Been?",
+      "author": "Joyce Carol Oates",
+      "year": 1967,
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1967,
+          "details": "Winner"
+        }
+      ],
+      "id": "where-are-you-going-where-have-you-been-joyce-carol-oates-1967"
+    },
+    {
+      "title": "We Can Remember It for You Wholesale",
+      "author": "Philip K. Dick",
+      "year": 1966,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "memory",
+        "identity"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1966,
+          "details": "Essential"
+        }
+      ],
+      "id": "we-can-remember-it-for-you-wholesale-philip-k-dick-1966"
+    },
+    {
+      "title": "Everything That Rises Must Converge",
+      "author": "Flannery O'Connor",
+      "year": 1965,
+      "collection": "Everything That Rises Must Converge",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1965,
+          "details": "Winner"
+        }
+      ],
+      "id": "everything-that-rises-must-converge-flannery-oconnor-1965"
+    },
+    {
+      "title": "Flowers for Algernon",
+      "author": "Daniel Keyes",
+      "year": 1960,
+      "collection": "Flowers for Algernon (novel)",
+      "genres": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "recognitions": [
+        {
+          "type": "Hugo Award",
+          "year": 1960,
+          "details": "Winner"
+        }
+      ],
+      "id": "flowers-for-algernon-daniel-keyes-1960"
+    },
+    {
+      "title": "Blow-Up",
+      "author": "Julio Cortázar",
+      "year": 1959,
+      "country": "Argentina",
+      "collection": "End of the Game",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "perception",
+        "reality"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1959,
+          "details": "Curated"
+        }
+      ],
+      "id": "blow-up-julio-cortázar-1959"
+    },
+    {
+      "title": "The Minority Report",
+      "author": "Philip K. Dick",
+      "year": 1956,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "free will",
+        "precognition"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1956,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-minority-report-philip-k-dick-1956"
+    },
+    {
+      "title": "The Last Question",
+      "author": "Isaac Asimov",
+      "year": 1956,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "entropy",
+        "cosmology",
+        "AI"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1956,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-last-question-isaac-asimov-1956"
+    },
+    {
+      "title": "Axolotl",
+      "author": "Julio Cortázar",
+      "year": 1956,
+      "country": "Argentina",
+      "collection": "End of the Game",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "identity",
+        "transformation"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1956,
+          "details": "Curated"
+        }
+      ],
+      "id": "axolotl-julio-cortázar-1956"
+    },
+    {
+      "title": "A Good Man Is Hard to Find",
+      "author": "Flannery O'Connor",
+      "year": 1955,
+      "collection": "A Good Man Is Hard to Find",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1955,
+          "details": "Winner"
+        }
+      ],
+      "id": "a-good-man-is-hard-to-find-flannery-oconnor-1955"
+    },
+    {
+      "title": "The Star",
+      "author": "Arthur C. Clarke",
+      "year": 1955,
+      "country": "UK",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "faith",
+        "theodicy"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1955,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-star-arthur-c-clarke-1955"
+    },
+    {
+      "title": "Toba Tek Singh",
+      "author": "Saadat Hasan Manto",
+      "year": 1955,
+      "country": "Pakistan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "partition",
+        "madness"
+      ],
+      "recognitions": [
+        {
+          "type": "South Asian Essential",
+          "year": 1955,
+          "details": "Curated"
+        }
+      ],
+      "id": "toba-tek-singh-saadat-hasan-manto-1955"
+    },
+    {
+      "title": "The Nine Billion Names of God",
+      "author": "Arthur C. Clarke",
+      "year": 1953,
+      "country": "UK",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "religion",
+        "technology"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1953,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-nine-billion-names-of-god-arthur-c-clarke-1953"
+    },
+    {
+      "title": "A Sound of Thunder",
+      "author": "Ray Bradbury",
+      "year": 1952,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "time travel",
+        "butterfly effect"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1952,
+          "details": "Essential"
+        }
+      ],
+      "id": "a-sound-of-thunder-ray-bradbury-1952"
+    },
+    {
+      "title": "For Esmé—with Love and Squalor",
+      "author": "J.D. Salinger",
+      "year": 1950,
+      "country": "USA",
+      "collection": "Nine Stories",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1950,
+          "details": "Essential"
+        }
+      ],
+      "id": "for-esméwith-love-and-squalor-jd-salinger-1950"
+    },
+    {
+      "title": "There Will Come Soft Rains",
+      "author": "Ray Bradbury",
+      "year": 1950,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "nuclear war",
+        "automation"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1950,
+          "details": "Essential"
+        }
+      ],
+      "id": "there-will-come-soft-rains-ray-bradbury-1950"
+    },
+    {
+      "title": "The Veldt",
+      "author": "Ray Bradbury",
+      "year": 1950,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "technology",
+        "parenting"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1950,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-veldt-ray-bradbury-1950"
+    },
+    {
+      "title": "The Lottery",
+      "author": "Shirley Jackson",
+      "year": 1949,
+      "collection": "The Lottery and Other Stories",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "O. Henry Prize",
+          "year": 1949,
+          "details": "Winner"
+        },
+        {
+          "type": "Free Online",
+          "year": 1948,
+          "details": "The New Yorker"
+        }
+      ],
+      "themes": [
+        "violence",
+        "conformity",
+        "tradition"
+      ],
+      "read_url": "https://www.newyorker.com/magazine/1948/06/26/the-lottery",
+      "source": "The New Yorker",
+      "id": "the-lottery-shirley-jackson-1949"
+    },
+    {
+      "title": "A Perfect Day for Bananafish",
+      "author": "J.D. Salinger",
+      "year": 1948,
+      "country": "USA",
+      "collection": "Nine Stories",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1948,
+          "details": "Essential"
+        }
+      ],
+      "id": "a-perfect-day-for-bananafish-jd-salinger-1948"
+    },
+    {
+      "title": "The Return",
+      "author": "Saadat Hasan Manto",
+      "year": 1948,
+      "country": "Pakistan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "partition",
+        "trauma"
+      ],
+      "recognitions": [
+        {
+          "type": "South Asian Essential",
+          "year": 1948,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-return-saadat-hasan-manto-1948"
+    },
+    {
+      "title": "House Taken Over",
+      "author": "Julio Cortázar",
+      "year": 1946,
+      "country": "Argentina",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "displacement",
+        "fear"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1946,
+          "details": "Curated"
+        }
+      ],
+      "id": "house-taken-over-julio-cortázar-1946"
+    },
+    {
+      "title": "The Aleph",
+      "author": "Jorge Luis Borges",
+      "year": 1945,
+      "country": "Argentina",
+      "collection": "The Aleph",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "infinity",
+        "perception"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1945,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-aleph-jorge-luis-borges-1945"
+    },
+    {
+      "title": "Funes the Memorious",
+      "author": "Jorge Luis Borges",
+      "year": 1942,
+      "country": "Argentina",
+      "collection": "Ficciones",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "memory",
+        "perception"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1942,
+          "details": "Curated"
+        }
+      ],
+      "id": "funes-the-memorious-jorge-luis-borges-1942"
+    },
+    {
+      "title": "Nightfall",
+      "author": "Isaac Asimov",
+      "year": 1941,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Science Fiction"
+      ],
+      "themes": [
+        "civilization",
+        "psychology"
+      ],
+      "recognitions": [
+        {
+          "type": "Sci-Fi Classic",
+          "year": 1941,
+          "details": "Essential"
+        }
+      ],
+      "id": "nightfall-isaac-asimov-1941"
+    },
+    {
+      "title": "The Library of Babel",
+      "author": "Jorge Luis Borges",
+      "year": 1941,
+      "country": "Argentina",
+      "collection": "Ficciones",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "infinity",
+        "knowledge"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1941,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-library-of-babel-jorge-luis-borges-1941"
+    },
+    {
+      "title": "The Garden of Forking Paths",
+      "author": "Jorge Luis Borges",
+      "year": 1941,
+      "country": "Argentina",
+      "collection": "Ficciones",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "time",
+        "labyrinths"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1941,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-garden-of-forking-paths-jorge-luis-borges-1941"
+    },
+    {
+      "title": "Tlön, Uqbar, Orbis Tertius",
+      "author": "Jorge Luis Borges",
+      "year": 1940,
+      "country": "Argentina",
+      "collection": "Ficciones",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "reality",
+        "idealism"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1940,
+          "details": "Curated"
+        }
+      ],
+      "id": "tlön-uqbar-orbis-tertius-jorge-luis-borges-1940"
+    },
+    {
+      "title": "Pierre Menard, Author of the Quixote",
+      "author": "Jorge Luis Borges",
+      "year": 1939,
+      "country": "Argentina",
+      "collection": "Ficciones",
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "authorship",
+        "interpretation"
+      ],
+      "recognitions": [
+        {
+          "type": "Latin American Essential",
+          "year": 1939,
+          "details": "Curated"
+        }
+      ],
+      "id": "pierre-menard-author-of-the-quixote-jorge-luis-borges-1939"
+    },
+    {
+      "title": "The Snows of Kilimanjaro",
+      "author": "Ernest Hemingway",
+      "year": 1936,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1936,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-snows-of-kilimanjaro-ernest-hemingway-1936"
+    },
+    {
+      "title": "A Clean, Well-Lighted Place",
+      "author": "Ernest Hemingway",
+      "year": 1933,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1933,
+          "details": "Essential"
+        }
+      ],
+      "id": "a-clean-well-lighted-place-ernest-hemingway-1933"
+    },
+    {
+      "title": "Hills Like White Elephants",
+      "author": "Ernest Hemingway",
+      "year": 1927,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1927,
+          "details": "Essential"
+        }
+      ],
+      "id": "hills-like-white-elephants-ernest-hemingway-1927"
+    },
+    {
+      "title": "The Dancing Girl of Izu",
+      "author": "Yasunari Kawabata",
+      "year": 1926,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "youth",
+        "beauty"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1926,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-dancing-girl-of-izu-yasunari-kawabata-1926"
+    },
+    {
+      "title": "A Hunger Artist",
+      "author": "Franz Kafka",
+      "year": 1922,
+      "country": "Czech Republic",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1922,
+          "details": "Essential"
+        }
+      ],
+      "id": "a-hunger-artist-franz-kafka-1922"
+    },
+    {
+      "title": "In a Grove",
+      "author": "Ryunosuke Akutagawa",
+      "year": 1922,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "truth",
+        "perspective"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1922,
+          "details": "Curated"
+        }
+      ],
+      "id": "in-a-grove-ryunosuke-akutagawa-1922"
+    },
+    {
+      "title": "In the Penal Colony",
+      "author": "Franz Kafka",
+      "year": 1919,
+      "country": "Czech Republic",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1919,
+          "details": "Essential"
+        }
+      ],
+      "id": "in-the-penal-colony-franz-kafka-1919"
+    },
+    {
+      "title": "Hell Screen",
+      "author": "Ryunosuke Akutagawa",
+      "year": 1918,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "art",
+        "obsession"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1918,
+          "details": "Curated"
+        }
+      ],
+      "id": "hell-screen-ryunosuke-akutagawa-1918"
+    },
+    {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "year": 1915,
+      "country": "Czech Republic",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1915,
+          "details": "Essential"
+        },
+        {
+          "type": "Free Online",
+          "year": 1915,
+          "details": "Project Gutenberg"
+        }
+      ],
+      "themes": [
+        "family",
+        "transformation",
+        "alienation"
+      ],
+      "read_url": "https://www.gutenberg.org/ebooks/5200",
+      "source": "Project Gutenberg",
+      "id": "the-metamorphosis-franz-kafka-1915"
+    },
+    {
+      "title": "Rashomon",
+      "author": "Ryunosuke Akutagawa",
+      "year": 1915,
+      "country": "Japan",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "morality",
+        "survival"
+      ],
+      "recognitions": [
+        {
+          "type": "Japanese Essential",
+          "year": 1915,
+          "details": "Curated"
+        }
+      ],
+      "id": "rashomon-ryunosuke-akutagawa-1915"
+    },
+    {
+      "title": "The Dead",
+      "author": "James Joyce",
+      "year": 1914,
+      "country": "Ireland",
+      "collection": "Dubliners",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1914,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-dead-james-joyce-1914"
+    },
+    {
+      "title": "Araby",
+      "author": "James Joyce",
+      "year": 1914,
+      "country": "Ireland",
+      "collection": "Dubliners",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1914,
+          "details": "Essential"
+        }
+      ],
+      "id": "araby-james-joyce-1914"
+    },
+    {
+      "title": "Eveline",
+      "author": "James Joyce",
+      "year": 1914,
+      "country": "Ireland",
+      "collection": "Dubliners",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1914,
+          "details": "Essential"
+        }
+      ],
+      "id": "eveline-james-joyce-1914"
+    },
+    {
+      "title": "The Lady with the Dog",
+      "author": "Anton Chekhov",
+      "year": 1899,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1899,
+          "details": "Essential"
+        },
+        {
+          "type": "Free Online",
+          "year": 1899,
+          "details": "Project Gutenberg"
+        }
+      ],
+      "themes": [
+        "adultery",
+        "ennui",
+        "love"
+      ],
+      "read_url": "https://www.gutenberg.org/ebooks/13415",
+      "source": "Project Gutenberg",
+      "id": "the-lady-with-the-dog-anton-chekhov-1899"
+    },
+    {
+      "title": "Master and Man",
+      "author": "Leo Tolstoy",
+      "year": 1895,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1895,
+          "details": "Essential"
+        }
+      ],
+      "id": "master-and-man-leo-tolstoy-1895"
+    },
+    {
+      "title": "Ward No. 6",
+      "author": "Anton Chekhov",
+      "year": 1892,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1892,
+          "details": "Essential"
+        }
+      ],
+      "id": "ward-no-6-anton-chekhov-1892"
+    },
+    {
+      "title": "The Yellow Wallpaper",
+      "author": "Charlotte Perkins Gilman",
+      "year": 1892,
+      "read_url": "https://www.gutenberg.org/ebooks/1952",
+      "source": "Project Gutenberg",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "themes": [
+        "mental health",
+        "feminism",
+        "confinement"
+      ],
+      "recognitions": [
+        {
+          "type": "Free Online",
+          "year": 1892,
+          "details": "Project Gutenberg"
+        }
+      ],
+      "id": "the-yellow-wallpaper-charlotte-perkins-gilman-1892"
+    },
+    {
+      "title": "An Occurrence at Owl Creek Bridge",
+      "author": "Ambrose Bierce",
+      "year": 1890,
+      "read_url": "https://www.gutenberg.org/ebooks/375",
+      "source": "Project Gutenberg",
+      "genres": [
+        "Literary Fiction"
+      ],
+      "themes": [
+        "war",
+        "death",
+        "perception"
+      ],
+      "recognitions": [
+        {
+          "type": "Free Online",
+          "year": 1890,
+          "details": "Project Gutenberg"
+        }
+      ],
+      "id": "an-occurrence-at-owl-creek-bridge-ambrose-bierce-1890"
+    },
+    {
+      "title": "The Bet",
+      "author": "Anton Chekhov",
+      "year": 1889,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1889,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-bet-anton-chekhov-1889"
+    },
+    {
+      "title": "The Death of Ivan Ilyich",
+      "author": "Leo Tolstoy",
+      "year": 1886,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1886,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-death-of-ivan-ilyich-leo-tolstoy-1886"
+    },
+    {
+      "title": "The Necklace",
+      "author": "Guy de Maupassant",
+      "year": 1884,
+      "country": "France",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1884,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-necklace-guy-de-maupassant-1884"
+    },
+    {
+      "title": "Boule de Suif",
+      "author": "Guy de Maupassant",
+      "year": 1880,
+      "country": "France",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1880,
+          "details": "Essential"
+        }
+      ],
+      "id": "boule-de-suif-guy-de-maupassant-1880"
+    },
+    {
+      "title": "Notes from Underground",
+      "author": "Fyodor Dostoevsky",
+      "year": 1864,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "alienation",
+        "free will"
+      ],
+      "recognitions": [
+        {
+          "type": "Eastern European Essential",
+          "year": 1864,
+          "details": "Curated"
+        }
+      ],
+      "id": "notes-from-underground-fyodor-dostoevsky-1864"
+    },
+    {
+      "title": "White Nights",
+      "author": "Fyodor Dostoevsky",
+      "year": 1848,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "loneliness",
+        "love"
+      ],
+      "recognitions": [
+        {
+          "type": "Eastern European Essential",
+          "year": 1848,
+          "details": "Curated"
+        }
+      ],
+      "id": "white-nights-fyodor-dostoevsky-1848"
+    },
+    {
+      "title": "The Cask of Amontillado",
+      "author": "Edgar Allan Poe",
+      "year": 1846,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1846,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-cask-of-amontillado-edgar-allan-poe-1846"
+    },
+    {
+      "title": "The Tell-Tale Heart",
+      "author": "Edgar Allan Poe",
+      "year": 1843,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1843,
+          "details": "Essential"
+        },
+        {
+          "type": "Free Online",
+          "year": 1843,
+          "details": "Project Gutenberg"
+        }
+      ],
+      "themes": [
+        "madness",
+        "guilt",
+        "murder"
+      ],
+      "read_url": "https://www.gutenberg.org/ebooks/2148",
+      "source": "Project Gutenberg",
+      "id": "the-tell-tale-heart-edgar-allan-poe-1843"
+    },
+    {
+      "title": "The Overcoat",
+      "author": "Nikolai Gogol",
+      "year": 1842,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "bureaucracy",
+        "poverty"
+      ],
+      "recognitions": [
+        {
+          "type": "Eastern European Essential",
+          "year": 1842,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-overcoat-nikolai-gogol-1842"
+    },
+    {
+      "title": "The Fall of the House of Usher",
+      "author": "Edgar Allan Poe",
+      "year": 1839,
+      "country": "USA",
+      "collection": null,
+      "genres": [
+        "Literary Fiction"
+      ],
+      "recognitions": [
+        {
+          "type": "Literary Classic",
+          "year": 1839,
+          "details": "Essential"
+        }
+      ],
+      "id": "the-fall-of-the-house-of-usher-edgar-allan-poe-1839"
+    },
+    {
+      "title": "The Nose",
+      "author": "Nikolai Gogol",
+      "year": 1836,
+      "country": "Russia",
+      "collection": null,
+      "genres": [
+        "Literary Fiction",
+        "World Literature"
+      ],
+      "themes": [
+        "absurdism",
+        "identity"
+      ],
+      "recognitions": [
+        {
+          "type": "Eastern European Essential",
+          "year": 1836,
+          "details": "Curated"
+        }
+      ],
+      "id": "the-nose-nikolai-gogol-1836"
+    }
+  ],
+  "recognitionTypes": [
+    "African Essential",
+    "Eastern European Essential",
+    "Free Online",
+    "Hugo Award",
+    "Japanese Essential",
+    "Latin American Essential",
+    "Literary Classic",
+    "Nebula Award",
+    "O. Henry Prize",
+    "Sci-Fi Classic",
+    "South Asian Essential"
+  ],
+  "genres": [
+    "Fantasy",
+    "Literary Fiction",
+    "Science Fiction",
+    "World Literature"
+  ],
+  "themes": [
+    "AI",
+    "Mexico",
+    "Nigeria",
+    "VR",
+    "absurdism",
+    "adaptation",
+    "adultery",
+    "alienation",
+    "anarchism",
+    "art",
+    "authorship",
+    "automation",
+    "beauty",
+    "body",
+    "bureaucracy",
+    "butterfly effect",
+    "cats",
+    "civilization",
+    "class",
+    "climate",
+    "colonialism",
+    "coming out",
+    "communication",
+    "community",
+    "confinement",
+    "conformity",
+    "consciousness",
+    "cosmology",
+    "dating",
+    "death",
+    "determinism",
+    "displacement",
+    "dystopia",
+    "ennui",
+    "entropy",
+    "ethics",
+    "exile",
+    "faith",
+    "family",
+    "father-son",
+    "fear",
+    "feminism",
+    "free will",
+    "gender",
+    "grief",
+    "guilt",
+    "history",
+    "humanity",
+    "hunger",
+    "idealism",
+    "identity",
+    "immigration",
+    "infinity",
+    "insomnia",
+    "intelligence",
+    "interpretation",
+    "knowledge",
+    "labyrinths",
+    "linguistics",
+    "literature",
+    "loneliness",
+    "loss",
+    "love",
+    "madness",
+    "magic",
+    "magical realism",
+    "marriage",
+    "memory",
+    "mental health",
+    "morality",
+    "mortality",
+    "murder",
+    "mystery",
+    "mythology",
+    "nuclear war",
+    "obsession",
+    "parallel universes",
+    "parenting",
+    "partition",
+    "perception",
+    "perspective",
+    "poverty",
+    "precognition",
+    "psychology",
+    "reality",
+    "religion",
+    "reproductive rights",
+    "resilience",
+    "resistance",
+    "responsibility",
+    "revolution",
+    "sanity",
+    "society",
+    "surrealism",
+    "survival",
+    "technology",
+    "theodicy",
+    "time",
+    "time travel",
+    "totalitarianism",
+    "tradition",
+    "transformation",
+    "trauma",
+    "truth",
+    "utilitarianism",
+    "violence",
+    "war",
+    "youth"
+  ]
+}

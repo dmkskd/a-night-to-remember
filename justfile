@@ -48,23 +48,56 @@ lint:
 check: lint test build
 
 # ─────────────────────────────────────────────────────────────────
-# DATA PIPELINE
+# DATA PIPELINE - MOVIES
 # ─────────────────────────────────────────────────────────────────
 
-# Run full pipeline: fetch → enrich → export (uv run python pipeline.py)
+# Run full movies pipeline: fetch → enrich → export (uv run python pipeline.py)
 [group('data')]
-data-build:
-    cd data-pipeline && uv run python pipeline.py
+movies-build:
+    cd data-pipeline/movies && uv run python pipeline.py
 
-# Run pipeline without TMDB enrichment - faster (uv run python pipeline.py --skip-enrich)
+# Run movies pipeline without TMDB enrichment - faster (uv run python pipeline.py --skip-enrich)
 [group('data')]
-data-fetch:
-    cd data-pipeline && uv run python pipeline.py --skip-enrich
+movies-fetch:
+    cd data-pipeline/movies && uv run python pipeline.py --skip-enrich
 
-# Run pipeline with limited movies for testing (uv run python pipeline.py --limit N)
+# Run movies pipeline with limited movies for testing (uv run python pipeline.py --limit N)
 [group('data')]
-data-test limit="10":
-    cd data-pipeline && uv run python pipeline.py --limit {{limit}}
+movies-test limit="10":
+    cd data-pipeline/movies && uv run python pipeline.py --limit {{limit}}
+
+# ─────────────────────────────────────────────────────────────────
+# DATA PIPELINE - MUSIC
+# ─────────────────────────────────────────────────────────────────
+
+# Run full music pipeline: fetch → enrich with Spotify → export (uv run python pipeline.py)
+[group('data')]
+music-build:
+    cd data-pipeline && uv run python -m music.pipeline
+
+# Run music pipeline without Spotify enrichment - faster (uv run python pipeline.py --skip-enrich)
+[group('data')]
+music-fetch:
+    cd data-pipeline && uv run python -m music.pipeline --skip-enrich
+
+# Run music pipeline with limited albums for testing (uv run python pipeline.py --limit N)
+[group('data')]
+music-test limit="10":
+    cd data-pipeline && uv run python -m music.pipeline --limit {{limit}}
+
+# ─────────────────────────────────────────────────────────────────
+# DATA PIPELINE - STORIES
+# ─────────────────────────────────────────────────────────────────
+
+# Run stories pipeline: fetch → export (uv run python pipeline.py)
+[group('data')]
+stories-build:
+    cd data-pipeline && uv run python -m stories.pipeline
+
+# Run stories pipeline with limited stories for testing
+[group('data')]
+stories-test limit="10":
+    cd data-pipeline && uv run python -m stories.pipeline --limit {{limit}}
 
 # Install data pipeline dependencies (uv sync)
 [group('data')]
@@ -75,13 +108,13 @@ data-install:
 # FULL WORKFLOWS
 # ─────────────────────────────────────────────────────────────────
 
-# Rebuild everything: data pipeline + web build
+# Rebuild everything: movies data + web build
 [group('workflow')]
-all: data-build build
+all: movies-build build
 
-# Quick rebuild: fetch data (no enrich) + web build
+# Quick rebuild: fetch movies (no enrich) + web build
 [group('workflow')]
-quick: data-fetch build
+quick: movies-fetch build
 
 # ─────────────────────────────────────────────────────────────────
 # SETUP & MAINTENANCE

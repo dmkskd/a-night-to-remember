@@ -18,7 +18,7 @@ export function MovieDetailPage() {
 
   // Load movie data using the hook
   const { movie, isLoading, error } = useMovie(id || '');
-  const { providers } = useMovies();
+  const { movies, providers } = useMovies();
 
   // Handle loading state
   if (isLoading) {
@@ -69,7 +69,7 @@ export function MovieDetailPage() {
         </Link>
       </nav>
       <main className="movie-detail-page__content">
-        <MovieDetail movie={movie} providers={providers} />
+        <MovieDetail movie={movie} providers={providers} allMovies={movies} />
       </main>
     </div>
   );

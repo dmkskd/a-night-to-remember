@@ -85,13 +85,16 @@ export function useFilteredMovies(
     }
 
     // Apply search filter if searchQuery is not empty
-    // Match against title OR director (case-insensitive)
+    // Match against title, director, or cast (case-insensitive)
     const trimmedQuery = searchQuery.trim().toLowerCase();
     if (trimmedQuery) {
       result = result.filter((movie) => {
         const titleMatch = movie.title.toLowerCase().includes(trimmedQuery);
         const directorMatch = movie.director.toLowerCase().includes(trimmedQuery);
-        return titleMatch || directorMatch;
+        const castMatch = movie.cast?.some(actor => 
+          actor.toLowerCase().includes(trimmedQuery)
+        );
+        return titleMatch || directorMatch || castMatch;
       });
     }
 

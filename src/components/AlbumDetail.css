@@ -1,0 +1,468 @@
+.album-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.album-detail__header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.album-detail__cover-container {
+  flex-shrink: 0;
+  width: 300px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.album-detail__cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album-detail__main-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.album-detail__title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.album-detail__title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.album-detail__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  flex-shrink: 0;
+}
+
+.album-detail__rating-star {
+  color: #fbbf24;
+}
+
+.album-detail__artist {
+  margin: 0;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.album-detail__link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.4);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.album-detail__link:hover {
+  color: #d4af37;
+  border-bottom-color: #d4af37;
+}
+
+.album-detail__year {
+  margin: 0;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.album-detail__label {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.album-detail__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.album-detail__genre {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.album-detail__genre:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Broad categories - same as movie genre tags */
+.album-detail__genre--broad {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.album-detail__genre--broad:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Detailed genres - slightly more subtle */
+.album-detail__genre--detailed {
+  background-color: rgba(255, 255, 255, 0.06);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.album-detail__genre--detailed:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Body sections */
+.album-detail__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.album-detail__section {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.album-detail__section-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Streaming services */
+.album-detail__streaming {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.album-detail__service {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.album-detail__service:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.album-detail__service-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.album-detail__service-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Track list */
+.album-detail__tracks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.album-detail__track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.album-detail__track:last-child {
+  border-bottom: none;
+}
+
+.album-detail__track-number {
+  width: 2rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+}
+
+.album-detail__track-name {
+  flex: 1;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.album-detail__track-duration {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+/* Recognitions */
+.album-detail__recognitions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.album-detail__recognition {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.album-detail__recognition-type {
+  font-weight: 600;
+  color: #d4af37;
+}
+
+.album-detail__recognition-year {
+  margin-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.album-detail__recognition-details {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* Similar albums */
+.album-detail__similar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.album-detail__similar-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.album-detail__similar-card:hover {
+  transform: translateY(-4px);
+}
+
+.album-detail__similar-cover {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+}
+
+.album-detail__similar-info {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.album-detail__similar-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.album-detail__similar-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.album-detail__similar-rating {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+.album-detail__similar-rating-star {
+  color: #fbbf24;
+}
+
+.album-detail__similar-meta {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .album-detail {
+    padding: 1rem;
+  }
+
+  .album-detail__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .album-detail__cover-container {
+    width: 200px;
+  }
+
+  .album-detail__main-info {
+    align-items: center;
+  }
+
+  .album-detail__title {
+    font-size: 1.75rem;
+  }
+
+  .album-detail__title-row {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .album-detail__genres {
+    justify-content: center;
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .album-detail__cover-container {
+    background-color: #f0f0f0;
+  }
+
+  .album-detail__title {
+    color: #1a1a1a;
+  }
+
+  .album-detail__rating {
+    color: #333;
+  }
+
+  .album-detail__artist {
+    color: #333;
+  }
+
+  .album-detail__link {
+    border-bottom-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .album-detail__link:hover {
+    color: #b8860b;
+    border-bottom-color: #b8860b;
+  }
+
+  .album-detail__year {
+    color: #666;
+  }
+
+  .album-detail__label {
+    color: #888;
+  }
+
+  .album-detail__genre {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .album-detail__section {
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .album-detail__section-title {
+    color: #1a1a1a;
+  }
+
+  .album-detail__service {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+  }
+
+  .album-detail__service:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .album-detail__track {
+    border-bottom-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .album-detail__track-number {
+    color: #999;
+  }
+
+  .album-detail__track-name {
+    color: #333;
+  }
+
+  .album-detail__track-duration {
+    color: #888;
+  }
+
+  .album-detail__recognition {
+    color: #333;
+  }
+
+  .album-detail__recognition-type {
+    color: #b8860b;
+  }
+
+  .album-detail__recognition-year {
+    color: #666;
+  }
+
+  .album-detail__recognition-details {
+    color: #555;
+  }
+
+  .album-detail__similar-cover {
+    background-color: #f0f0f0;
+  }
+
+  .album-detail__similar-title {
+    color: #1a1a1a;
+  }
+
+  .album-detail__similar-rating {
+    color: #333;
+  }
+
+  .album-detail__similar-meta {
+    color: #666;
+  }
+}

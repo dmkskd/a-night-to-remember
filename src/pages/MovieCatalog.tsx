@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useMovies } from '../hooks/useMovies';
 import { useFilteredMovies } from '../hooks/useFilteredMovies';
 import { FilterDropdown } from '../components/FilterDropdown';
@@ -59,16 +60,36 @@ const STREAMING_REGIONS = [
  * 
  * Validates: Requirements 1.1, 1.3, 3.3, 4.3
  */
-export function MovieCatalog() {
+export function MovieCatalog({ showTitle = true }: { showTitle?: boolean }) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  
   // State for active filters and search query
   const [awardsFilters, setAwardsFilters] = useState<string[]>([]);
   const [streamingFilters, setStreamingFilters] = useState<string[]>([]);
-  const [streamingRegion, setStreamingRegion] = useState<string>('GB');
+  const [streamingRegion, setStreamingRegion] = useState<string>(() => {
+    return localStorage.getItem('streamingRegion') || 'GB';
+  });
   const [countryFilters, setCountryFilters] = useState<string[]>([]);
 
-  // Auto-detect user's country on mount
+  // Initialize search from URL query param
+  const [searchQuery, setSearchQueryState] = useState<string>(() => {
+    return searchParams.get('q') || '';
+  });
+
+  // Update search and sync with URL
+  const setSearchQuery = (query: string) => {
+    setSearchQueryState(query);
+    if (query) {
+      setSearchParams({ q: query });
+    } else {
+      setSearchParams({});
+    }
+  };
+
+  // Auto-detect user's country on mount (only if not already set)
   useEffect(() => {
     const detectCountry = async () => {
+      if (localStorage.getItem('streamingRegion')) return;
       try {
         const response = await fetch('https://ipapi.co/country_code/');
         if (response.ok) {
@@ -77,6 +98,7 @@ export function MovieCatalog() {
           const supported = STREAMING_REGIONS.find(r => r.code === countryCode);
           if (supported) {
             setStreamingRegion(countryCode);
+            localStorage.setItem('streamingRegion', countryCode);
           }
         }
       } catch {
@@ -88,7 +110,6 @@ export function MovieCatalog() {
   const [decadeFilters, setDecadeFilters] = useState<string[]>([]);
   const [genreFilters, setGenreFilters] = useState<string[]>([]);
   const [minRating, setMinRating] = useState<number>(0);
-  const [searchQuery, setSearchQuery] = useState<string>('');
 
   // Load movies from the data source
   const { movies, providers, isLoading, error } = useMovies();
@@ -255,14 +276,17 @@ export function MovieCatalog() {
     setDecadeFilters([]);
     setGenreFilters([]);
     setMinRating(0);
-    setSearchQuery('');
+    setSearchQueryState('');
+    setSearchParams({});
   };
 
   return (
     <div className="movie-catalog">
-      <header className="movie-catalog__header">
-        <h1 className="movie-catalog__title">A Night To Remember</h1>
-      </header>
+      {showTitle && (
+        <header className="movie-catalog__header">
+          <h1 className="movie-catalog__title">A Night To Remember</h1>
+        </header>
+      )}
 
       <div className="movie-catalog__controls">
         <div className="movie-catalog__filters">
@@ -326,7 +350,9 @@ export function MovieCatalog() {
             className="movie-catalog__region-select"
             value={streamingRegion}
             onChange={(e) => {
-              setStreamingRegion(e.target.value);
+              const newRegion = e.target.value;
+              setStreamingRegion(newRegion);
+              localStorage.setItem('streamingRegion', newRegion);
               setStreamingFilters([]); // Clear streaming filters when region changes
             }}
             title="Streaming region"

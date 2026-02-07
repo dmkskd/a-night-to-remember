@@ -1,0 +1,127 @@
+.music-catalog {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.music-catalog__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.music-catalog__title {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.music-catalog__subtitle {
+  color: var(--text-secondary, #a0a0a0);
+  margin: 0;
+}
+
+.music-catalog__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.music-catalog__filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.music-catalog__search {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.music-catalog__clear-all {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.music-catalog__clear-all:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.music-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.music-catalog__empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary, #a0a0a0);
+}
+
+.music-catalog__clear-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.music-catalog__clear-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .music-catalog__subtitle {
+    color: #666;
+  }
+
+  .music-catalog__clear-all {
+    border-color: #ccc;
+    color: #666;
+  }
+
+  .music-catalog__clear-all:hover {
+    background: #f0f0f0;
+    color: #333;
+  }
+
+  .music-catalog__empty {
+    color: #666;
+  }
+
+  .music-catalog__clear-button {
+    background: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .music-catalog__controls {
+    flex-direction: column;
+  }
+
+  .music-catalog__search {
+    width: 100%;
+  }
+
+  .music-catalog__grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+}
