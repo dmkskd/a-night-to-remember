@@ -1,0 +1,189 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card__poster-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background-color: #2a2a2a;
+}
+
+.movie-card__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.movie-card__placeholder-text {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.movie-card__rating {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.movie-card__rating-star {
+  color: #fbbf24;
+}
+
+.movie-card__rating-value {
+  color: white;
+}
+
+.movie-card__info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.movie-card__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
+.movie-card__director {
+  margin: 0;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-card__meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.movie-card__meta {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-card__streaming {
+  display: flex;
+  gap: 3px;
+}
+
+.movie-card__streaming-logo {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  opacity: 0.85;
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .movie-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .movie-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .movie-card__poster-container {
+    background-color: #f0f0f0;
+  }
+
+  .movie-card__placeholder {
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  }
+
+  .movie-card__placeholder-text {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .movie-card__title {
+    color: #1a1a1a;
+  }
+
+  .movie-card__director {
+    color: #555555;
+  }
+
+  .movie-card__meta {
+    color: #888888;
+  }
+}
+
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .movie-card {
+    border-radius: 6px;
+  }
+
+  .movie-card:hover {
+    transform: none;
+  }
+
+  .movie-card__info {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .movie-card__title {
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+
+  .movie-card__director {
+    font-size: 0.75rem;
+  }
+
+  .movie-card__meta {
+    font-size: 0.75rem;
+  }
+
+  .movie-card__placeholder-text {
+    font-size: 0.75rem;
+  }
+
+  .movie-card__streaming-logo {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,100 @@
+.movie-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.movie-detail-page__nav {
+  margin-bottom: 1.5rem;
+}
+
+.movie-detail-page__back-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.movie-detail-page__back-link:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+.movie-detail-page__content {
+  min-height: 400px;
+}
+
+/* Loading state */
+.movie-detail-page__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.movie-detail-page__loading p {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+/* Error state */
+.movie-detail-page__error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  gap: 1rem;
+  text-align: center;
+}
+
+.movie-detail-page__error p {
+  font-size: 1.125rem;
+  color: #dc2626;
+}
+
+/* Not found state */
+.movie-detail-page__not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  gap: 1rem;
+  text-align: center;
+}
+
+.movie-detail-page__not-found h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.movie-detail-page__not-found p {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .movie-detail-page {
+    padding: 2rem;
+  }
+
+  .movie-detail-page__nav {
+    margin-bottom: 2rem;
+  }
+
+  .movie-detail-page__back-link {
+    font-size: 1.125rem;
+  }
+
+  .movie-detail-page__not-found h2 {
+    font-size: 2rem;
+  }
+}

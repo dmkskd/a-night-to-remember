@@ -1,0 +1,226 @@
+.movie-catalog {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.movie-catalog__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.movie-catalog__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.movie-catalog__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.movie-catalog__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie-catalog__streaming-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie-catalog__region-select {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  padding-right: 1.75rem;
+}
+
+.movie-catalog__region-select:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.movie-catalog__region-select:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+@media (prefers-color-scheme: light) {
+  .movie-catalog__region-select {
+    border-color: #ccc;
+    color: #333;
+    background-color: white;
+  }
+
+  .movie-catalog__region-select:hover {
+    border-color: #999;
+    background-color: #f5f5f5;
+  }
+}
+
+.movie-catalog__search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.movie-catalog__clear-all {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.movie-catalog__clear-all:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  .movie-catalog__clear-all {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #666;
+  }
+
+  .movie-catalog__clear-all:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+}
+
+.movie-catalog__content {
+  min-height: 300px;
+}
+
+/* Loading state */
+.movie-catalog__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.movie-catalog__loading p {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+/* Error state */
+.movie-catalog__error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 1rem;
+}
+
+.movie-catalog__error p {
+  font-size: 1.125rem;
+  color: #dc2626;
+}
+
+.movie-catalog__retry-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.movie-catalog__retry-button:hover {
+  background-color: #333;
+}
+
+/* Empty state */
+.movie-catalog__empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 1rem;
+  text-align: center;
+}
+
+.movie-catalog__empty p {
+  font-size: 1.125rem;
+  color: #666;
+}
+
+.movie-catalog__clear-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.movie-catalog__clear-button:hover {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .movie-catalog__controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .movie-catalog__search {
+    order: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-catalog {
+    padding: 2rem;
+  }
+
+  .movie-catalog__title {
+    font-size: 2.5rem;
+  }
+
+  .movie-catalog__controls {
+    gap: 1.5rem;
+  }
+}
+
+/* Dark mode title fix */
+@media (prefers-color-scheme: dark) {
+  .movie-catalog__title {
+    color: rgba(255, 255, 255, 0.95);
+  }
+}

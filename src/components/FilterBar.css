@@ -1,0 +1,109 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.filter-bar__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-bar__button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-bar__button:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.filter-bar__button--active {
+  border-color: #e50914;
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+.filter-bar__button--active:hover {
+  border-color: #f40612;
+  background-color: #f40612;
+}
+
+.filter-bar__clear-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-bar__clear-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .filter-bar__button {
+    border-color: #cccccc;
+    color: #333333;
+  }
+
+  .filter-bar__button:hover {
+    border-color: #999999;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .filter-bar__button--active {
+    border-color: #e50914;
+    background-color: #e50914;
+    color: #ffffff;
+  }
+
+  .filter-bar__button--active:hover {
+    border-color: #f40612;
+    background-color: #f40612;
+  }
+
+  .filter-bar__clear-button {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #666666;
+  }
+
+  .filter-bar__clear-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333333;
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .filter-bar {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .filter-bar__button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .filter-bar__clear-button {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+}

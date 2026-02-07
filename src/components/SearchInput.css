@@ -1,0 +1,100 @@
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input__field {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.search-input__field::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search-input__field:focus {
+  outline: none;
+  border-color: #e50914;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-input__clear-button {
+  position: absolute;
+  right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-input__clear-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .search-input__field {
+    border-color: #cccccc;
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  .search-input__field::placeholder {
+    color: #999999;
+  }
+
+  .search-input__field:focus {
+    border-color: #e50914;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.1);
+  }
+
+  .search-input__clear-button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #666666;
+  }
+
+  .search-input__clear-button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #333333;
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .search-input {
+    max-width: 100%;
+  }
+
+  .search-input__field {
+    padding: 0.625rem 2.25rem 0.625rem 0.875rem;
+    font-size: 0.9375rem;
+  }
+
+  .search-input__clear-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.125rem;
+  }
+}

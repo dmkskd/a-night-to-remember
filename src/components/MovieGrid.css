@@ -1,0 +1,60 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Desktop: Multi-column layout (3-4 columns) */
+@media (min-width: 1024px) {
+  .movie-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Tablet: 2-3 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .movie-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile: 2 column layout */
+@media (max-width: 767px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Very small screens: still 2 columns but tighter */
+@media (max-width: 400px) {
+  .movie-grid {
+    gap: 0.5rem;
+    padding: 0.25rem;
+  }
+}
+
+/* Empty state styling */
+.movie-grid__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.movie-grid__empty p {
+  margin: 0;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .movie-grid__empty p {
+    color: #666666;
+  }
+}

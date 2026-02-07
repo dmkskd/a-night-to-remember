@@ -1,0 +1,414 @@
+.movie-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header section with poster and main info */
+.movie-detail__header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.movie-detail__poster-container {
+  flex-shrink: 0;
+  width: 300px;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.movie-detail__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-detail__main-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.movie-detail__title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.movie-detail__director {
+  margin: 0;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.movie-detail__year {
+  margin: 0;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.movie-detail__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.movie-detail__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.movie-detail__rating-star {
+  color: #fbbf24;
+}
+
+.movie-detail__separator {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.movie-detail__synopsis {
+  margin-top: 1.5rem;
+}
+
+.movie-detail__synopsis-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Body sections */
+.movie-detail__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.movie-detail__section {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.movie-detail__section-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Cast list */
+.movie-detail__cast-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.movie-detail__cast-item {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Genres */
+.movie-detail__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.movie-detail__genre-tag {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Recognitions list */
+.movie-detail__recognitions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.movie-detail__recognition-item {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.movie-detail__recognition-type {
+  font-weight: 600;
+  color: #d4af37;
+}
+
+.movie-detail__recognition-year {
+  margin-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.movie-detail__recognition-details {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+/* Tags */
+.movie-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.movie-detail__tag {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(100, 100, 100, 0.3);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Streaming section */
+.movie-detail__streaming-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.movie-detail__streaming-header .movie-detail__section-title {
+  margin: 0;
+}
+
+.movie-detail__region-select {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.movie-detail__region-select:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.movie-detail__no-streaming {
+  margin: 0;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+.movie-detail__streaming {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.movie-detail__streaming-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.movie-detail__streaming-label {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.movie-detail__streaming-providers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.movie-detail__provider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+.movie-detail__provider-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.movie-detail__provider-name {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .movie-detail {
+    padding: 1rem;
+  }
+
+  .movie-detail__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-detail__poster-container {
+    width: 200px;
+  }
+
+  .movie-detail__main-info {
+    align-items: center;
+  }
+
+  .movie-detail__title {
+    font-size: 1.75rem;
+  }
+
+  .movie-detail__director {
+    font-size: 1.125rem;
+  }
+
+  .movie-detail__meta {
+    justify-content: center;
+  }
+
+  .movie-detail__synopsis-text {
+    text-align: left;
+  }
+
+  .movie-detail__cast-list {
+    justify-content: center;
+  }
+
+  .movie-detail__genres,
+  .movie-detail__tags {
+    justify-content: center;
+  }
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .movie-detail__poster-container {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .movie-detail__title {
+    color: #1a1a1a;
+  }
+
+  .movie-detail__director {
+    color: #333333;
+  }
+
+  .movie-detail__year {
+    color: #666666;
+  }
+
+  .movie-detail__meta {
+    color: #666666;
+  }
+
+  .movie-detail__rating {
+    color: #333333;
+  }
+
+  .movie-detail__separator {
+    color: #999999;
+  }
+
+  .movie-detail__synopsis-text {
+    color: #333333;
+  }
+
+  .movie-detail__section {
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .movie-detail__section-title {
+    color: #1a1a1a;
+  }
+
+  .movie-detail__cast-item {
+    color: #333333;
+  }
+
+  .movie-detail__genre-tag {
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .movie-detail__recognition-item {
+    color: #333333;
+  }
+
+  .movie-detail__recognition-type {
+    color: #b8860b;
+  }
+
+  .movie-detail__recognition-year {
+    color: #666666;
+  }
+
+  .movie-detail__recognition-details {
+    color: #555555;
+  }
+
+  .movie-detail__tag {
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .movie-detail__streaming-label {
+    color: #666666;
+  }
+
+  .movie-detail__provider {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .movie-detail__provider-name {
+    color: #333333;
+  }
+
+  .movie-detail__region-select {
+    border-color: #ccc;
+    color: #333;
+    background-color: white;
+  }
+
+  .movie-detail__no-streaming {
+    color: #888;
+  }
+}
