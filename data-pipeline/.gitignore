@@ -7,3 +7,8 @@ uv.lock
 # Enrichment caches (avoid re-fetching from APIs)
 .spotify_cache.json
 .tmdb_cache.json
+
+# Test output files
+test_albums.json
+test_movies.json
+test_stories.json

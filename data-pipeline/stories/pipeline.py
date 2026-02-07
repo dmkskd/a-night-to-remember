@@ -59,10 +59,12 @@ def create_story_id(author: str, title: str, year: int) -> str:
     return slug
 
 
-def run_pipeline(limit: int = None):
+def run_pipeline(limit: int = None, dry_run: bool = False):
     """Run the full stories pipeline."""
     print("=" * 50)
     print("Stories Data Pipeline")
+    if dry_run:
+        print("(DRY RUN - output to test file)")
     print("=" * 50)
     
     # Fetch from all sources
@@ -128,7 +130,10 @@ def run_pipeline(limit: int = None):
     }
     
     # Write to file
-    output_path = Path(__file__).parent.parent.parent / "src" / "data" / "stories.json"
+    if dry_run:
+        output_path = Path(__file__).parent / "test_stories.json"
+    else:
+        output_path = Path(__file__).parent.parent.parent / "src" / "data" / "stories.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
     with open(output_path, "w", encoding="utf-8") as f:
@@ -143,6 +148,7 @@ def run_pipeline(limit: int = None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Stories data pipeline")
     parser.add_argument("--limit", type=int, help="Limit number of stories to process")
+    parser.add_argument("--dry-run", action="store_true", help="Output to test file instead of real data")
     args = parser.parse_args()
     
-    run_pipeline(limit=args.limit)
+    run_pipeline(limit=args.limit, dry_run=args.dry_run)

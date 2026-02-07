@@ -4,7 +4,38 @@ import sys
 import base64
 import requests
 import time
+from datetime import datetime, timedelta
 from typing import Optional
+
+
+def format_duration(seconds: int) -> str:
+    """Format seconds into human-readable duration."""
+    if seconds < 60:
+        return f"{seconds}s"
+    elif seconds < 3600:
+        mins = seconds // 60
+        return f"{mins}m"
+    else:
+        hours = seconds // 3600
+        mins = (seconds % 3600) // 60
+        if mins:
+            return f"{hours}h {mins}m"
+        return f"{hours}h"
+
+
+def format_retry_time(seconds: int) -> str:
+    """Format when to retry in human-readable format."""
+    retry_at = datetime.now() + timedelta(seconds=seconds)
+    return retry_at.strftime("%H:%M")
+
+
+class RateLimitedError(Exception):
+    """Raised when Spotify rate limits us for a long time."""
+    def __init__(self, retry_after: int):
+        self.retry_after = retry_after
+        self.retry_at = format_retry_time(retry_after)
+        self.duration = format_duration(retry_after)
+        super().__init__(f"Rate limited by Spotify. Try again in {self.duration} (around {self.retry_at})")
 
 # Genre normalization mapping - maps Spotify's granular genres to broader categories
 GENRE_MAPPING = {
@@ -264,9 +295,14 @@ class SpotifyEnricher:
             )
             
             if response.status_code == 429:
-                retry_after = min(int(response.headers.get("Retry-After", 5)), 30)
-                print(f"    ⚠ Rate limited, waiting {retry_after}s...", file=sys.stderr)
-                time.sleep(retry_after + 1)
+                vendor_retry = int(response.headers.get("Retry-After", 5))
+                
+                # If vendor says wait more than 5 minutes, abort entirely
+                if vendor_retry > 300:
+                    raise RateLimitedError(vendor_retry)
+                
+                print(f"    ⚠ Rate limited, waiting {format_duration(vendor_retry)}...", file=sys.stderr)
+                time.sleep(vendor_retry + 1)
                 response = requests.get(
                     f"{self.base_url}/search",
                     headers=self._get_headers(),
@@ -325,10 +361,14 @@ class SpotifyEnricher:
                 )
                 
                 if response.status_code == 429:
-                    # Rate limited - wait and retry (cap at 30 seconds)
-                    retry_after = min(int(response.headers.get("Retry-After", 5)), 30)
-                    print(f"    ⚠ Rate limited (attempt {attempt+1}/3), waiting {retry_after}s...", file=sys.stderr)
-                    time.sleep(retry_after + 1)
+                    vendor_retry = int(response.headers.get("Retry-After", 5))
+                    
+                    # If vendor says wait more than 5 minutes, abort entirely
+                    if vendor_retry > 300:
+                        raise RateLimitedError(vendor_retry)
+                    
+                    print(f"    ⚠ Rate limited (attempt {attempt+1}/3), waiting {format_duration(vendor_retry)}...", file=sys.stderr)
+                    time.sleep(vendor_retry + 1)
                     continue
                 
                 if response.status_code != 200:
@@ -384,9 +424,13 @@ class SpotifyEnricher:
                 headers=self._get_headers()
             )
             if response.status_code == 429:
-                retry_after = min(int(response.headers.get("Retry-After", 5)), 30)
-                print(f"    ⚠ Rate limited on artist genres, waiting {retry_after}s...", file=sys.stderr)
-                time.sleep(retry_after + 1)
+                vendor_retry = int(response.headers.get("Retry-After", 5))
+                
+                if vendor_retry > 300:
+                    raise RateLimitedError(vendor_retry)
+                
+                print(f"    ⚠ Rate limited on artist genres, waiting {format_duration(vendor_retry)}...", file=sys.stderr)
+                time.sleep(vendor_retry + 1)
                 response = requests.get(
                     f"{self.base_url}/artists/{artist_id}",
                     headers=self._get_headers()

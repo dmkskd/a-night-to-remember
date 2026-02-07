@@ -44,6 +44,7 @@ from fetchers import (
 from enrichers import tmdb
 
 OUTPUT_PATH = Path(__file__).parent.parent.parent / "src" / "data" / "movies.json"
+TEST_OUTPUT_PATH = Path(__file__).parent / "test_movies.json"
 
 # Known director name corrections (bad_name -> correct_name)
 DIRECTOR_CORRECTIONS = {
@@ -328,16 +329,20 @@ def main():
         print(f"\nEnrichment complete: {success} succeeded, {failed} failed")
     
     # Step 3: Export
-    if not args.dry_run:
-        print("\n" + "=" * 50)
-        print("STEP 3: Exporting")
-        print("=" * 50)
-        recognition_types = get_recognition_types(FETCHERS)
-        export_catalog(catalog, OUTPUT_PATH, recognition_types)
-        print(f"Wrote {len(catalog)} movies to {OUTPUT_PATH}")
-        print(f"Recognition types: {len(recognition_types)}")
+    print("\n" + "=" * 50)
+    print("STEP 3: Exporting")
+    print("=" * 50)
+    recognition_types = get_recognition_types(FETCHERS)
+    
+    if args.dry_run:
+        output_path = TEST_OUTPUT_PATH
+        print("(DRY RUN - output to test file)")
     else:
-        print(f"\n[Dry run] Would write {len(catalog)} movies")
+        output_path = OUTPUT_PATH
+    
+    export_catalog(catalog, output_path, recognition_types)
+    print(f"Wrote {len(catalog)} movies to {output_path}")
+    print(f"Recognition types: {len(recognition_types)}")
 
 
 if __name__ == "__main__":

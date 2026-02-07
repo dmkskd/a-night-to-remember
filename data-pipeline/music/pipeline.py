@@ -30,7 +30,7 @@ from music.fetchers.critics import (
 from music.fetchers.expanded import fetch_rym_top_albums
 from music.fetchers.genres import fetch_genre_essentials
 from music.fetchers.curated import fetch_curated_albums
-from music.enrichers.spotify import SpotifyEnricher
+from music.enrichers.spotify import SpotifyEnricher, RateLimitedError
 
 
 # Cache file for Spotify enrichment data
@@ -155,63 +155,71 @@ def enrich_with_spotify(albums: list[dict], skip_enrich: bool = False, force_ref
     enricher = SpotifyEnricher()
     enriched = []
     
-    for i, album in enumerate(albums):
-        cache_key = get_cache_key(album["artist"], album["title"])
-        
-        # Check cache first
-        if cache_key in cache:
-            cached = cache[cache_key]
-            album["cover_url"] = cached.get("cover_url")
-            album["spotify_url"] = cached.get("spotify_url")
-            album["spotify_id"] = cached.get("spotify_id")
-            album["genres"] = cached.get("genres", [])
-            album["detailed_genres"] = cached.get("detailed_genres", [])
-            album["label"] = cached.get("label")
-            album["tracks"] = cached.get("tracks", [])
-            cache_hits += 1
+    try:
+        for i, album in enumerate(albums):
+            cache_key = get_cache_key(album["artist"], album["title"])
+            
+            # Check cache first
+            if cache_key in cache:
+                cached = cache[cache_key]
+                album["cover_url"] = cached.get("cover_url")
+                album["spotify_url"] = cached.get("spotify_url")
+                album["spotify_id"] = cached.get("spotify_id")
+                album["genres"] = cached.get("genres", [])
+                album["detailed_genres"] = cached.get("detailed_genres", [])
+                album["label"] = cached.get("label")
+                album["tracks"] = cached.get("tracks", [])
+                cache_hits += 1
+                enriched.append(album)
+                continue
+            
+            # Not in cache - call API
+            print(f"  [{i+1}/{len(albums)}] {album['artist']} - {album['title']}")
+            api_calls += 1
+            
+            spotify_data = enricher.search_album(album["artist"], album["title"])
+            
+            if not spotify_data:
+                add_failure(album, "Not found on Spotify")
+                # Cache the miss too (with empty data) to avoid re-querying
+                cache[cache_key] = {"not_found": True}
+                enriched.append(album)
+                continue
+            
+            album["cover_url"] = spotify_data.get("cover_url")
+            album["spotify_url"] = spotify_data.get("spotify_url")
+            album["spotify_id"] = spotify_data.get("spotify_id")
+            
+            # Get additional details
+            if spotify_data.get("spotify_id"):
+                details = enricher.get_album_details(spotify_data["spotify_id"])
+                if details:
+                    album["genres"] = details.get("genres", [])
+                    album["detailed_genres"] = details.get("detailed_genres", [])
+                    album["label"] = details.get("label")
+                    album["tracks"] = details.get("tracks", [])
+                else:
+                    add_failure(album, "Failed to get album details (rate limited?)")
+            
+            # Save to cache
+            cache[cache_key] = {
+                "cover_url": album.get("cover_url"),
+                "spotify_url": album.get("spotify_url"),
+                "spotify_id": album.get("spotify_id"),
+                "genres": album.get("genres", []),
+                "detailed_genres": album.get("detailed_genres", []),
+                "label": album.get("label"),
+                "tracks": album.get("tracks", []),
+            }
+            
             enriched.append(album)
-            continue
-        
-        # Not in cache - call API
-        print(f"  [{i+1}/{len(albums)}] {album['artist']} - {album['title']}")
-        api_calls += 1
-        
-        spotify_data = enricher.search_album(album["artist"], album["title"])
-        
-        if not spotify_data:
-            add_failure(album, "Not found on Spotify")
-            # Cache the miss too (with empty data) to avoid re-querying
-            cache[cache_key] = {"not_found": True}
+    
+    except RateLimitedError as e:
+        print(f"\n✗ {e}", file=sys.stderr)
+        print(f"  Enriched {len(enriched)}/{len(albums)} albums before rate limit.", file=sys.stderr)
+        # Add remaining albums without enrichment
+        for album in albums[len(enriched):]:
             enriched.append(album)
-            continue
-        
-        album["cover_url"] = spotify_data.get("cover_url")
-        album["spotify_url"] = spotify_data.get("spotify_url")
-        album["spotify_id"] = spotify_data.get("spotify_id")
-        
-        # Get additional details
-        if spotify_data.get("spotify_id"):
-            details = enricher.get_album_details(spotify_data["spotify_id"])
-            if details:
-                album["genres"] = details.get("genres", [])
-                album["detailed_genres"] = details.get("detailed_genres", [])
-                album["label"] = details.get("label")
-                album["tracks"] = details.get("tracks", [])
-            else:
-                add_failure(album, "Failed to get album details (rate limited?)")
-        
-        # Save to cache
-        cache[cache_key] = {
-            "cover_url": album.get("cover_url"),
-            "spotify_url": album.get("spotify_url"),
-            "spotify_id": album.get("spotify_id"),
-            "genres": album.get("genres", []),
-            "detailed_genres": album.get("detailed_genres", []),
-            "label": album.get("label"),
-            "tracks": album.get("tracks", []),
-        }
-        
-        enriched.append(album)
     
     # Save updated cache
     save_cache(cache)
@@ -220,10 +228,12 @@ def enrich_with_spotify(albums: list[dict], skip_enrich: bool = False, force_ref
     return enriched
 
 
-def run_pipeline(skip_enrich: bool = False, limit: int = None, force_refresh: bool = False):
+def run_pipeline(skip_enrich: bool = False, limit: int = None, force_refresh: bool = False, dry_run: bool = False):
     """Run the full music pipeline."""
     print("=" * 50)
     print("Music Data Pipeline")
+    if dry_run:
+        print("(DRY RUN - output to test file)")
     print("=" * 50)
     
     # Fetch from all sources
@@ -292,7 +302,10 @@ def run_pipeline(skip_enrich: bool = False, limit: int = None, force_refresh: bo
     }
     
     # Write to file
-    output_path = Path(__file__).parent.parent.parent / "src" / "data" / "albums.json"
+    if dry_run:
+        output_path = Path(__file__).parent / "test_albums.json"
+    else:
+        output_path = Path(__file__).parent.parent.parent / "src" / "data" / "albums.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
     with open(output_path, "w", encoding="utf-8") as f:
@@ -312,6 +325,7 @@ if __name__ == "__main__":
     parser.add_argument("--skip-enrich", action="store_true", help="Skip Spotify enrichment")
     parser.add_argument("--force-refresh", action="store_true", help="Ignore cache, re-fetch all from Spotify")
     parser.add_argument("--limit", type=int, help="Limit number of albums to process")
+    parser.add_argument("--dry-run", action="store_true", help="Output to test file instead of real data")
     args = parser.parse_args()
     
-    run_pipeline(skip_enrich=args.skip_enrich, limit=args.limit, force_refresh=args.force_refresh)
+    run_pipeline(skip_enrich=args.skip_enrich, limit=args.limit, force_refresh=args.force_refresh, dry_run=args.dry_run)
