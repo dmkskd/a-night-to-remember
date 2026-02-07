@@ -291,6 +291,7 @@ def main():
     parser = argparse.ArgumentParser(description="Build movie catalog")
     parser.add_argument("--min-year", type=int, default=2000, help="Minimum year")
     parser.add_argument("--skip-enrich", action="store_true", help="Skip TMDB enrichment")
+    parser.add_argument("--force", action="store_true", help="Ignore cache, re-fetch all from TMDB")
     parser.add_argument("--dry-run", action="store_true", help="Don't write output")
     parser.add_argument("--limit", type=int, default=0, help="Limit number of movies (0 = no limit)")
     args = parser.parse_args()
@@ -318,7 +319,9 @@ def main():
         print("\n" + "=" * 50)
         print("STEP 2: Enriching with TMDB")
         print("=" * 50)
-        success, failed = tmdb.enrich_catalog(list(catalog))
+        if args.force:
+            print("(force refresh - ignoring cache)")
+        success, failed = tmdb.enrich_catalog(list(catalog), force_refresh=args.force)
         
         # Print failure report
         tmdb.print_failure_report()

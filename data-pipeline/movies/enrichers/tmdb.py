@@ -297,7 +297,9 @@ def _fetch_movie_details(movie: MovieEntry, movie_id: int) -> bool:
     response = requests.get(details_url, params=params)
     
     if not response.ok:
-        _enrichment_failures.append((movie.title, movie.year, movie.director, "Failed to fetch details"))
+        reason = "Failed to fetch details"
+        _enrichment_failures.append((movie.title, movie.year, movie.director, reason))
+        _save_to_cache(movie.title, movie.year, {"not_found": True, "reason": reason})
         return False
     
     data = response.json()
@@ -318,6 +320,7 @@ def _fetch_movie_details(movie: MovieEntry, movie_id: int) -> bool:
     
     # Country
     countries = data.get("production_countries", [])
+    country = ""
     if countries:
         country = countries[0].get("name", "")
         # Shorten common names
@@ -331,9 +334,34 @@ def _fetch_movie_details(movie: MovieEntry, movie_id: int) -> bool:
     movie.cast = [c["name"] for c in cast]
     
     # Streaming providers
-    movie.streaming = _extract_streaming(data)
+    streaming = _extract_streaming(data)
+    movie.streaming = streaming
+    
+    # Save to cache
+    _save_to_cache(movie.title, movie.year, {
+        "synopsis": movie.synopsis,
+        "poster_url": movie.poster_url,
+        "runtime": movie.runtime,
+        "genres": movie.genres,
+        "rating": movie.rating,
+        "country": country,
+        "cast": movie.cast,
+        "streaming": streaming,
+    })
     
     return True
+
+
+def _apply_cached_data(movie: MovieEntry, cached: dict) -> None:
+    """Apply cached enrichment data to a movie."""
+    movie.synopsis = cached.get("synopsis", "")
+    movie.poster_url = cached.get("poster_url")
+    movie.runtime = cached.get("runtime")
+    movie.genres = cached.get("genres", [])
+    movie.rating = cached.get("rating")
+    movie.country = cached.get("country", "")
+    movie.cast = cached.get("cast", [])
+    movie.streaming = cached.get("streaming", {})
 
 
 def _extract_streaming(tmdb_data: dict) -> dict[str, list[dict]]:
@@ -384,26 +412,46 @@ def _extract_streaming(tmdb_data: dict) -> dict[str, list[dict]]:
     return streaming_by_region
 
 
-def enrich_catalog(movies: list[MovieEntry], delay: float = 0.3) -> tuple[int, int]:
+def enrich_catalog(movies: list[MovieEntry], delay: float = 0.3, force_refresh: bool = False) -> tuple[int, int]:
     """
     Enrich all movies in a catalog with TMDB data.
     Returns (success_count, failure_count).
+    Uses cache unless force_refresh is True.
     """
     clear_failures()
     success = 0
     failed = 0
+    cache_hits = 0
+    api_calls = 0
     
     for i, movie in enumerate(movies):
-        print(f"  [{i+1}/{len(movies)}] {movie.title} ({movie.year}) ", end="")
+        # Check if we'll use cache
+        cached = None if force_refresh else _get_from_cache(movie.title, movie.year)
         
-        if enrich_movie(movie):
-            print("✓")
+        if cached and not cached.get("not_found"):
+            # Will use cache
+            print(f"  [{i+1}/{len(movies)}] {movie.title} ({movie.year}) (cached) ✓")
+            _apply_cached_data(movie, cached)
             success += 1
+            cache_hits += 1
         else:
-            print("✗")
-            failed += 1
-        
-        time.sleep(delay)  # Rate limiting
+            # Need API call
+            print(f"  [{i+1}/{len(movies)}] {movie.title} ({movie.year}) ", end="")
+            api_calls += 1
+            
+            if enrich_movie(movie, force_refresh=force_refresh):
+                print("✓")
+                success += 1
+            else:
+                print("✗")
+                failed += 1
+            
+            time.sleep(delay)  # Rate limiting only for API calls
+    
+    # Save cache at the end
+    _save_cache()
+    
+    print(f"\n  Cache: {cache_hits} hits, {api_calls} API calls")
     
     return success, failed
 
