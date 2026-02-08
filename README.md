@@ -48,12 +48,51 @@ Run `just` to see all commands grouped by category.
 
 ### Data Pipeline
 
-| Command | Description | Underlying |
-|---------|-------------|------------|
-| `just data-build` | Full pipeline: fetch → enrich → export | `uv run python pipeline.py` |
-| `just data-fetch` | Quick fetch (no TMDB enrichment) | `uv run python pipeline.py --skip-enrich` |
-| `just data-test N` | Test with N movies (default: 10) | `uv run python pipeline.py --limit N` |
-| `just data-install` | Install pipeline dependencies | `uv sync` |
+The `just` commands are pass-through wrappers - all arguments are forwarded directly to the Python pipelines.
+
+#### Command Equivalents
+
+| just | uv (direct) |
+|------|-------------|
+| `just movies` | `cd data-pipeline/movies && uv run python pipeline.py` |
+| `just movies --force` | `cd data-pipeline/movies && uv run python pipeline.py --force` |
+| `just movies --limit 10` | `cd data-pipeline/movies && uv run python pipeline.py --limit 10` |
+| `just music` | `cd data-pipeline && uv run python -m music.pipeline` |
+| `just music --force-refresh` | `cd data-pipeline && uv run python -m music.pipeline --force-refresh` |
+| `just stories` | `cd data-pipeline && uv run python -m stories.pipeline` |
+| `just stories --dry-run` | `cd data-pipeline && uv run python -m stories.pipeline --dry-run` |
+| `just data-install` | `cd data-pipeline && uv sync` |
+
+#### Pipeline CLI Options
+
+**Movies** (`just movies [OPTIONS]`):
+| Option | Description |
+|--------|-------------|
+| `--skip-enrich` | Skip TMDB API enrichment (faster) |
+| `--force` | Ignore cache, re-fetch all from TMDB |
+| `--dry-run` | Output to test file instead of `src/data/movies.json` |
+| `--limit N` | Process only N movies |
+| `--min-year YYYY` | Minimum year filter (default: 2000) |
+
+**Music** (`just music [OPTIONS]`):
+| Option | Description |
+|--------|-------------|
+| `--skip-enrich` | Skip Spotify API enrichment |
+| `--force-refresh` | Ignore cache, re-fetch all from Spotify |
+| `--dry-run` | Output to test file instead of `src/data/albums.json` |
+| `--limit N` | Process only N albums |
+
+**Stories** (`just stories [OPTIONS]`):
+| Option | Description |
+|--------|-------------|
+| `--dry-run` | Output to test file instead of `src/data/stories.json` |
+| `--limit N` | Process only N stories |
+
+#### Caching
+
+- **Movies**: TMDB cache in `data-pipeline/movies/enrichers/` — bypass with `--force`
+- **Music**: Spotify cache in `data-pipeline/music/.spotify_cache.json` — bypass with `--force-refresh`
+- **Stories**: No external API, no cache
 
 ### Full Workflows
 
